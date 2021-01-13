@@ -4,7 +4,7 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 600
+let preferredWidth = 300
 let preferredHeight = 600
 /*:
  ## Required code
@@ -36,8 +36,30 @@ PlaygroundPage.current.liveView = canvas
 
  */
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+// Draw the axes
+canvas.drawAxes(withScale: true, by: 50)
+
+// Draw the rectangle
+canvas.drawRectangle(at: Point(x: 200, y: 150), width: 100, height: 200)
+
+// Draw the panda's head
+canvas.drawEllipse(at: Point(x: 100, y: 400), width: 125, height: 125)
+
+// Draw the panda´s nose
+canvas.fillColor = Color.white
+canvas.drawEllipse(at: Point(x: 100, y: 400), width: 20, height: 20)
+
+// Draw the panda' left eye
+canvas.fillColor = Color.green
+canvas.drawEllipse(at: Point(x: 75, y: 425), width: 20, height: 20)
+
+
+// Draw the panda' right eye
+canvas.fillColor = Color.green
+canvas.drawEllipse(at: Point(x: 125, y: 425), width: 20, height: 20)
+
+
+
 
 /*:
  ## Show the Live View
