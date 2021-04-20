@@ -35,52 +35,43 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+func turtleTomidlleOfcanvas () {
+    turtle.penUp ()
+    turtle.forward (steps: canvas.width/2)
+    
+    turtle.left(by: 90)
+    turtle.penUp()
+    turtle.forward (steps:canvas.width/2)
+    turtle.left(by: 90)
+    turtle.drawSelf()
+    
+}
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+turtleTomidlleOfcanvas()
 
+turtle.right(by: 90)
 
-    // Change fill colour
-canvas.fillColor = Color.black
+turtle.forward(steps: 100)
+turtle.drawSelf()
 
-    // Draw the rectangle that forms the background
-    canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 600)
+turtle.right(by: 180)
+turtle.penUp()
+turtle.forward(steps: 60)
 
-// draw a blue rectangle
-canvas.fillColor = Color.blue
-canvas.drawRectangle(at: Point(x: 50, y: 450), width: 25, height: 25)
+turtle.left(by: 90)
+turtle.drawSelf()
 
-// draw a white rectangle
-canvas.fillColor = Color.white
-canvas.drawRectangle(at: Point(x: 85, y: 450), width: 75, height: 25)
+turtle.forward(steps: 60)
+turtle.right(by: 90)
+turtle.forward(steps: 50)
 
-// draw a blue recatangle
-canvas.fillColor = Color.blue
-canvas.drawRectangle(at: Point(x: 170, y: 450), width: 75, height: 25)
+turtle.left(by: 180)
+turtle.penUp()
+turtle.forward(steps: 50)
+turtle.drawSelf()
+turtle.forward(steps: 60)
 
-// draw a red rectangle
-canvas.fillColor = Color.red
-canvas.drawRectangle(at: Point(x: 50, y: 330), width: 110, height: 110)
-
-// draw a yellow rectangle
-canvas.fillColor = Color.yellow
-canvas.drawRectangle(at: Point(x: 170, y: 385), width: 75, height: 50)
-
-//draw a white rectangle
-canvas.fillColor = Color.white
-canvas.drawRectangle(at: Point(x: 170, y: 330), width: 34, height: 45)
-
-//draw a white rectangle
-canvas.fillColor = Color.white
-canvas.drawRectangle(at: Point(x: 210, y: 330), width: 34, height: 45)
-
-// draw a white rectangle
-canvas.fillColor = Color.white
-canvas.drawRectangle(at: Point(x: 100, y: 288), width: 60, height: 34)
-
-// draw a red rectangle
-canvas.fillColor = Color.red
-canvas.drawRectangle(at: Point(x: 100, y: 250), width: 60, height: 30)
-
+turtle.drawSelf()
 /*:
  ## Show the Live View
  Don't see any results?

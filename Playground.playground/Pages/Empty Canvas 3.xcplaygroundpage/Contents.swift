@@ -5,7 +5,7 @@
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
 let preferredWidth = 300
-let preferredHeight = 600
+let preferredHeight = 300
 /*:
  ## Required code
  
@@ -35,18 +35,38 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+func turtleTomidlleOfcanvas () {
+    turtle.penUp ()
+    turtle.forward (steps: canvas.width/2)
+    turtle.left(by: 90)
+    turtle.forward(steps: canvas.height / 2)
+    turtle.right(by: 90)
+    turtle.drawSelf()
+}
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+func drawArrow() {
+    // Instructions to draw arrow
+    turtle.penDown()
+    turtle.forward(steps: 60)
+    turtle.right(by: 90)
+    turtle.forward(steps: 25)
+    turtle.left(by: 135)
+    turtle.forward(steps: 40)
+    turtle.left(by: 90)
+    turtle.forward(steps: 40)
+    turtle.left(by: 135)
+    turtle.forward(steps: 20)
+    turtle.right(by: 90)
+    turtle.forward(steps: 60)
+}
 
-// Change fill colour
-canvas.fillColor = Color.black
+// Actually go to the middle of the canvas
+turtleTomidlleOfcanvas()
 
-// Draw the rectangle that forms the background
-canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 600)
+// Actually draw an arrow
+drawArrow()
 
-//draw the robot head
-canvas.fillColor = Color.white
+
 
 /*:
  ## Show the Live View

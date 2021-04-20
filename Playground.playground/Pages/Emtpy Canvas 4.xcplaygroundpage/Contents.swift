@@ -5,7 +5,7 @@
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
 let preferredWidth = 600
-let preferredHeight = 600
+let preferredHeight = 300
 /*:
  ## Required code
  
