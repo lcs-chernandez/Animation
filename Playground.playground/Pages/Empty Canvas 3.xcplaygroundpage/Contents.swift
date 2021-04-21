@@ -4,8 +4,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 300
-let preferredHeight = 300
+let preferredWidth = 460
+let preferredHeight = 460
 /*:
  ## Required code
  
@@ -43,21 +43,84 @@ func turtleTomidlleOfcanvas () {
     turtle.right(by: 90)
     turtle.drawSelf()
 }
-
-func drawArrow() {
+let squareSize = 7
+func drawArrow(){
+    turtle.drawSelf()
+     
     // Instructions to draw arrow
     turtle.penDown()
-    turtle.forward(steps: 60)
+    turtle.forward(steps: squareSize * 7)
+    
     turtle.right(by: 90)
-    turtle.forward(steps: 25)
+    turtle.forward(steps: squareSize * 2)
     turtle.left(by: 135)
-    turtle.forward(steps: 40)
+    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
     turtle.left(by: 90)
-    turtle.forward(steps: 40)
+    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
     turtle.left(by: 135)
-    turtle.forward(steps: 20)
+    turtle.forward(steps: squareSize * 2)
     turtle.right(by: 90)
-    turtle.forward(steps: 60)
+    turtle.forward(steps: squareSize * 7)
+    turtle.left(by: 90)
+    turtle.forward(steps: squareSize * 3)
+    
+    
+    turtle.left(by: 90)
+    turtle.drawSelf()
+    turtle.penUp()
+    turtle.forward(steps: squareSize * 11)
+    turtle.penDown()
+    turtle.drawSelf()
+    
+    turtle.penDown()
+    turtle.forward(steps: squareSize * 7)
+    
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 2)
+    turtle.left(by: 135)
+    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
+    turtle.left(by: 90)
+    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
+    turtle.left(by: 135)
+    turtle.forward(steps: squareSize * 2)
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 7)
+    turtle.left(by: 90)
+    turtle.forward(steps: squareSize * 3)
+    
+    
+    turtle.left(by: 90)
+    turtle.drawSelf()
+    turtle.penUp()
+    turtle.forward(steps: squareSize * 11)
+    turtle.penDown()
+    turtle.drawSelf()
+            
+    turtle.penDown()
+    turtle.forward(steps: squareSize * 7)
+    
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 2)
+    turtle.left(by: 135)
+    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
+    turtle.left(by: 90)
+    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
+    turtle.left(by: 135)
+    turtle.forward(steps: squareSize * 2)
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 7)
+    turtle.left(by: 90)
+    turtle.forward(steps: squareSize * 3)
+    
+    
+    turtle.left(by: 90)
+    turtle.drawSelf()
+    turtle.penUp()
+    turtle.forward(steps: squareSize * 11)
+    turtle.penDown()
+    turtle.drawSelf()
+            
+                                    
 }
 
 // Actually go to the middle of the canvas
