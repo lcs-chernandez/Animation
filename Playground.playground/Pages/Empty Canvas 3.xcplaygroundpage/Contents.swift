@@ -43,9 +43,10 @@ func turtleTomidlleOfcanvas () {
     turtle.right(by: 90)
     turtle.drawSelf()
 }
+
 let squareSize = 7
-func drawArrow(){
-    turtle.drawSelf()
+func drawArrow() {
+
      
     // Instructions to draw arrow
     turtle.penDown()
@@ -66,68 +67,33 @@ func drawArrow(){
     
     
     turtle.left(by: 90)
-    turtle.drawSelf()
     turtle.penUp()
     turtle.forward(steps: squareSize * 11)
-    turtle.penDown()
-    turtle.drawSelf()
-    
-    turtle.penDown()
-    turtle.forward(steps: squareSize * 7)
-    
-    turtle.right(by: 90)
-    turtle.forward(steps: squareSize * 2)
-    turtle.left(by: 135)
-    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
-    turtle.left(by: 90)
-    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
-    turtle.left(by: 135)
-    turtle.forward(steps: squareSize * 2)
-    turtle.right(by: 90)
-    turtle.forward(steps: squareSize * 7)
-    turtle.left(by: 90)
-    turtle.forward(steps: squareSize * 3)
+   
+        
+}
     
     
-    turtle.left(by: 90)
-    turtle.drawSelf()
-    turtle.penUp()
-    turtle.forward(steps: squareSize * 11)
-    turtle.penDown()
-    turtle.drawSelf()
-            
-    turtle.penDown()
-    turtle.forward(steps: squareSize * 7)
     
-    turtle.right(by: 90)
-    turtle.forward(steps: squareSize * 2)
-    turtle.left(by: 135)
-    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
-    turtle.left(by: 90)
-    turtle.forward(steps:4*Int(Double(2).squareRoot()*Double(squareSize)))
-    turtle.left(by: 135)
-    turtle.forward(steps: squareSize * 2)
-    turtle.right(by: 90)
-    turtle.forward(steps: squareSize * 7)
-    turtle.left(by: 90)
-    turtle.forward(steps: squareSize * 3)
-    
-    
-    turtle.left(by: 90)
-    turtle.drawSelf()
-    turtle.penUp()
-    turtle.forward(steps: squareSize * 11)
-    turtle.penDown()
-    turtle.drawSelf()
-            
-                                    
+for _ in 1...6 {
+    drawArrow()
 }
 
-// Actually go to the middle of the canvas
-turtleTomidlleOfcanvas()
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 7)
+turtle.left(by: 90)
 
-// Actually draw an arrow
-drawArrow()
+turtle.penUp()
+turtle.forward(steps: squareSize * 65)
+turtle.left(by: 180)
+
+
+for _ in 1...6 {
+    drawArrow()
+}
+
+
+
 
 
 
@@ -146,3 +112,4 @@ drawArrow()
  
  ![source_control](source-control.png "Source Control")
  */
+

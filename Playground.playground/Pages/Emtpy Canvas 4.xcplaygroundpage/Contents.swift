@@ -4,8 +4,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 600
-let preferredHeight = 300
+let preferredWidth = 450
+let preferredHeight = 450
 /*:
  ## Required code
  
@@ -36,8 +36,48 @@ PlaygroundPage.current.liveView = canvas
 
  */
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+// draw h forms
+
+let squareSize = 7
+
+func drawH() {
+    turtle.penUp()
+    turtle.left(by: 90)
+    turtle.forward(steps: squareSize * 4)
+    turtle.penDown()
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 2)
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 1)
+    turtle.left(by: 90)
+    turtle.forward(steps: squareSize * 4)
+    turtle.left(by: 90)
+    turtle.forward(steps: squareSize * 1)
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 2)
+    turtle.right(by: 90)
+    turtle.forward(steps: squareSize * 4)
+    
+    turtle.right(by: 180)
+    turtle.penUp()
+    turtle.forward(steps: squareSize
+     * 4)
+    turtle.right(by: 90)
+    turtle.drawSelf()
+    
+    
+    
+}
+
+
+for _ in 1...6 {
+    drawH()
+}
+
+
+drawH()
+
+
 
 /*:
  ## Show the Live View
