@@ -38,43 +38,48 @@ PlaygroundPage.current.liveView = canvas
 
 // draw h forms
 
-let squareSize = 7
+let squareSize = 8
 
 func drawH() {
-    turtle.penUp()
+    turtle.penDown()
     turtle.left(by: 90)
     turtle.forward(steps: squareSize * 4)
     turtle.penDown()
     turtle.right(by: 90)
     turtle.forward(steps: squareSize * 2)
     turtle.right(by: 90)
-    turtle.forward(steps: squareSize * 1)
+    turtle.forward(steps: squareSize * 2)
     turtle.left(by: 90)
     turtle.forward(steps: squareSize * 4)
     turtle.left(by: 90)
-    turtle.forward(steps: squareSize * 1)
+    turtle.forward(steps: squareSize * 2)
     turtle.right(by: 90)
     turtle.forward(steps: squareSize * 2)
     turtle.right(by: 90)
     turtle.forward(steps: squareSize * 4)
+   
     
-    turtle.right(by: 180)
-    turtle.penUp()
-    turtle.forward(steps: squareSize
-     * 4)
-    turtle.right(by: 90)
-    turtle.drawSelf()
+    turtle.left(by: 90)
+        turtle.penUp()
+  
+   
     
-    
-    
-}
-
-
-for _ in 1...6 {
+    }
+for _ in 1...8 {
     drawH()
 }
 
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
 
+turtle.penUp()
+turtle.forward(steps: squareSize * 65)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
 drawH()
 
 
