@@ -103,9 +103,98 @@ for _ in 1...8 {
     drawH()
 }
 
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...10 {
+    drawH()
+}
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
+
 drawH()
 
 
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...10 {
+    drawH()
+}
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...11 {
+    drawH()
+}
 
 /*:
  ## Show the Live View
