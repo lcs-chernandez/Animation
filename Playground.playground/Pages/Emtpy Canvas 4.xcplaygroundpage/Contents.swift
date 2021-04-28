@@ -74,12 +74,35 @@ turtle.forward(steps: squareSize * 3)
 turtle.left(by: 90)
 
 turtle.penUp()
-turtle.forward(steps: squareSize * 65)
+turtle.forward(steps: squareSize * 73)
 turtle.left(by: 180)
 turtle.forward(steps: squareSize * 5)
 for _ in 1...8 {
     drawH()
 }
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
+turtle.left(by: 90)
+turtle.forward(steps: squareSize * 3)
+turtle.left(by: 90)
+
+turtle.penUp()
+turtle.forward(steps: squareSize * 73)
+turtle.left(by: 180)
+turtle.forward(steps: squareSize * 5)
+for _ in 1...8 {
+    drawH()
+}
+
 drawH()
 
 
