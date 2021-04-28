@@ -5,7 +5,7 @@
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
 let preferredWidth = 450
-let preferredHeight = 450
+let preferredHeight = 470
 /*:
  ## Required code
  
@@ -38,7 +38,7 @@ PlaygroundPage.current.liveView = canvas
 
 // draw h forms
 
-let squareSize = 8
+let squareSize = 14
 
 func drawH() {
     turtle.penDown()
